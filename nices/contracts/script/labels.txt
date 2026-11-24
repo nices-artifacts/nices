@@ -1,0 +1,101 @@
+deploy PoseidonT3
+deploy VerifierUpdate8
+deploy VerifierUpdate16
+deploy VerifierUpdate32
+deploy VerifierUpdate64
+deploy VerifierClose8
+deploy VerifierClose16
+deploy VerifierClose32
+deploy VerifierClose64
+deploy VerifierPost8
+deploy VerifierPost16
+deploy VerifierPost32
+deploy VerifierPost64
+deploy VerifierWithdraw
+deploy VerifierInsert
+deploy NICES
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+insertBatch 64 leaves
+initGroup N=8
+update N=8 expense t=0
+update N=8 repayment
+update N=8 expense t>0
+update N=8 settlement
+update N=8 settlement
+update N=8 settlement
+update N=8 settlement
+update N=8 settlement
+insertBatch 16 leaves
+update N=8 settlement
+update N=8 settlement
+close N=8
+withdraw
+initGroup N=16
+update N=16 expense t=0
+update N=16 repayment
+update N=16 expense t>0
+initGroup N=32
+update N=32 expense t=0
+update N=32 repayment
+update N=32 expense t>0
+initGroup N=64
+update N=64 expense t=0
+update N=64 repayment
+update N=64 expense t>0
+initGroup N=8 off-chain
+post N=8 state
+post N=8 final
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+deposit
+insertBatch 38 leaves
+update N=8 off-chain settlement
+update N=8 off-chain settlement
+update N=8 off-chain settlement
+update N=8 off-chain settlement
+close N=8
+initGroup N=16 off-chain
+post N=16 state
+post N=16 final
+initGroup N=32 off-chain
+post N=32 state
+post N=32 final
+initGroup N=64 off-chain
+post N=64 state
+post N=64 final

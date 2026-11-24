@@ -1,0 +1,6 @@
+nices/target/
+nices/contracts/out/
+nices/contracts/cache/
+nices/contracts/broadcast/
+nices/contracts/keys/
+results/

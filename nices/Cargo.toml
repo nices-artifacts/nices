@@ -1,0 +1,29 @@
+[package]
+name = "nices"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+description = "NICES: the update, withdrawal and close relations with Poseidon encryption, in arkworks"
+
+[dependencies]
+ark-bn254 = "0.5"
+ark-ed-on-bn254 = { version = "0.5", features = ["r1cs"] }
+ark-ec = "0.5"
+ark-ff = "0.5"
+ark-std = { version = "0.5", features = ["std"] }
+ark-relations = "0.5"
+ark-r1cs-std = "0.5"
+ark-crypto-primitives = { version = "0.5", features = ["sponge", "r1cs"] }
+ark-groth16 = "0.5"
+ark-snark = "0.5"
+ark-serialize = "0.5"
+rand = "0.8"
+tiny-keccak = { version = "2", features = ["keccak"] }
+ureq = { version = "2", features = ["json"] }
+serde_json = "1"
+
+[profile.release]
+debug = false
+
+[profile.test]
+opt-level = 3
